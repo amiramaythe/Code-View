@@ -26,6 +26,18 @@ final class ViewControllerScreen: UIView {
         return view
     }()
 
+    private lazy var gridContainer : UIStackView = {
+        let view = UIStackView(frame: .zero)
+        view.axis = .horizontal
+        view.distribution = .fillEqually
+        view.spacing = 8.0
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
+    let leftBox = GridBoxView()
+    let rightBox = GridBoxView()
+
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
         setupView()
@@ -42,6 +54,9 @@ extension ViewControllerScreen: CodeView {
     //adicionar a view
     func buildViewHierarchy() {
         addSubview(button)
+        gridContainer.addArrangedSubview(leftBox)
+        gridContainer.addArrangedSubview(rightBox)
+        addSubview(gridContainer)
     }
     //adicionar as constriants (right/bottom (-) left/top (+)
     func setupConstraints() {
@@ -53,6 +68,14 @@ extension ViewControllerScreen: CodeView {
         button.heightAnchor.constraint(equalToConstant: 50).isActive = true
         //margem inferior da view
         button.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20).isActive = true
+
+
+        //constraints gridcontainer
+        gridContainer.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
+        gridContainer.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
+        gridContainer.heightAnchor.constraint(equalToConstant: 320).isActive = true
+        gridContainer.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+
     }
     //setup adicional
     func setupAddConfigurate() {
