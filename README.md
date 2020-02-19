@@ -9,7 +9,7 @@
 
 //etapa 2 - Adicionar no delegate a inicialização da window
 
-//etapa 3 - testar na view controller por meio da loadView
+//etapa 3 - testar na view controller por meio da loadView (responsável por fazer a propriedade view existir em primeiro lugar.)
 
 //etapa 4 - separar o codigo em outro arquivo para representar a tela
 
