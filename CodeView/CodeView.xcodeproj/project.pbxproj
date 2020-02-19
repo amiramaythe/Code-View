@@ -13,6 +13,7 @@
 		3F2D173C23FC5DE40095D7F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2D173A23FC5DE40095D7F3 /* LaunchScreen.storyboard */; };
 		3F2D174423FC62970095D7F3 /* ViewControllerSrceen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2D174323FC62970095D7F3 /* ViewControllerSrceen.swift */; };
 		3F2D174623FC70AB0095D7F3 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2D174523FC70AB0095D7F3 /* CodeView.swift */; };
+		3F2D174823FCBE0B0095D7F3 /* GridBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2D174723FCBE0B0095D7F3 /* GridBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3F2D173D23FC5DE40095D7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F2D174323FC62970095D7F3 /* ViewControllerSrceen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSrceen.swift; sourceTree = "<group>"; };
 		3F2D174523FC70AB0095D7F3 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		3F2D174723FCBE0B0095D7F3 /* GridBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridBoxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3F2D173D23FC5DE40095D7F3 /* Info.plist */,
 				3F2D174323FC62970095D7F3 /* ViewControllerSrceen.swift */,
 				3F2D174523FC70AB0095D7F3 /* CodeView.swift */,
+				3F2D174723FCBE0B0095D7F3 /* GridBoxView.swift */,
 			);
 			path = CodeView;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2D174823FCBE0B0095D7F3 /* GridBoxView.swift in Sources */,
 				3F2D173423FC5DE20095D7F3 /* ViewController.swift in Sources */,
 				3F2D173223FC5DE20095D7F3 /* AppDelegate.swift in Sources */,
 				3F2D174423FC62970095D7F3 /* ViewControllerSrceen.swift in Sources */,

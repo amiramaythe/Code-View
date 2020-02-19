@@ -9,17 +9,15 @@
 //etapa 5 - criando a view, adicionado, constraints e o setup adicional
 //etapa 6 - introduzir um protocolo para facilitar e padronizar a criação da etapa 5
 //etapa 7 - orgarnizar o codigo em outro arquivo
-
+//etapa 8 - pensar o codeview como componentes
 
 import UIKit
-
-
 
 //essa classe está herdando de UIView
 final class ViewControllerScreen: UIView {
 
     //criando a view - lazy(permite acessar outros metodos dentro desse bloco)
-   lazy var button : UIButton = {
+    lazy var button : UIButton = {
         let view = UIButton(frame: .zero)
         view.backgroundColor = .red
         view.setTitle("Fech", for: .normal)
@@ -58,8 +56,9 @@ extension ViewControllerScreen: CodeView {
     }
     //setup adicional
     func setupAddConfigurate() {
-         backgroundColor = .darkGray
+        backgroundColor = .darkGray
     }
 
 
 }
+
